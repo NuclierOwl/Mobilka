@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mobilka-krosovok</string>
+
+    <string name="registration">Регистрация</string>
+    <string name="fill_data_or_social">Заполните Свои Данные Или Продолжите Через Социальные Медиа</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="privacy_agreement">Даю согласие на обработку персональных данных</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="already_have_account">Есть аккаунт? Войти</string>
+
+    <string name="forgot_password">Забыл Пароль</string>
+    <string name="enter_account_for_reset">Введите Свою Учетную Запись\nДля Сброса</string>
+    <string name="send">Отправить</string>
+    <string name="Privetstvie">Приветствуем</string>
+</resources>
