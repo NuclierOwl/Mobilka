@@ -10,7 +10,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.CompositionLocalProvider
-import com.example.mobilnoe_dno.R
+import com.example.mobilka_krosovok.R
+import com.example.mobilka_krosovok.R.font
 
 @Immutable
 data class Temka(
@@ -41,12 +42,12 @@ val localTypograf = staticCompositionLocalOf {
 }
 
 val fromFontFamily = FontFamily(
-    Font(R.font.roboto_serif, FontWeight.Normal),
-    Font(R.font.roboto_serif_bold, FontWeight.Bold),
-    Font(R.font.roboto_serif_black, FontWeight.Black),
-    Font(R.font.roboto_serif_medium, FontWeight.Medium),
-    Font(R.font.roboto_serif_extrabold, FontWeight.ExtraBold),
-    Font(R.font.roboto_serif_semibold, FontWeight.SemiBold)
+    Font(font.roboto_serif, FontWeight.Normal),
+    Font(font.roboto_serif_bold, FontWeight.Bold),
+    Font(font.roboto_serif_black, FontWeight.Black),
+    Font(font.roboto_serif_medium, FontWeight.Medium),
+    Font(font.roboto_serif_extrabold, FontWeight.ExtraBold),
+    Font(font.roboto_serif_semibold, FontWeight.SemiBold)
 )
 
 val localTemka = staticCompositionLocalOf {

@@ -1,5 +1,6 @@
 package org.example.data
 
+import org.example.data.model.SneakersDTO
 import org.example.data.model.UserDTO
 import org.example.domain.request.RegistrationRequest
 

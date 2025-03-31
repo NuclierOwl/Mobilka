@@ -1,3 +1,6 @@
+import org.example.data.SnikerRep
+import org.example.data.model.SneakersDTO
+
 class SnikerRepImpl : SnikerRep {
 
     private val sneakersList = mutableListOf<SneakersDTO>()

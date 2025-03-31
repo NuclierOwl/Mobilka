@@ -1,5 +1,8 @@
+import org.example.data.SnikerRep
+import org.example.data.model.SneakersDTO
+
 class ShoesUseCaseImpl(
-    private val shoesRepository: SneakersRepository
+    private val shoesRepository: SnikerRep
 ) : ShoesUseCase {
 
     override fun addShoes(request: AddShoesRequest): Boolean {

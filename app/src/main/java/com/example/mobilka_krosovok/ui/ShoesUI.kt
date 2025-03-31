@@ -1,8 +1,8 @@
 package org.example.ui
 
-import org.example.domain.ShoesUseCase
-import org.example.domain.request.AddShoesRequest
-import org.example.domain.response.ShoesDetailsResponse
+import AddShoesRequest
+import ShoesUseCase
+
 
 class ShoesUI(private val shoesUseCase: ShoesUseCase) {
 
@@ -12,16 +12,15 @@ class ShoesUI(private val shoesUseCase: ShoesUseCase) {
             println("Add -- Добавить кроссовки")
             println("Info -- Получить информацию о кроссовках")
             println("Del -- Удалить кроссовки")
-            println("Fil Фильтровать кроссовки по цене")
-            println("Exit Выйти")
+            println("Fil -- Фильтровать кроссовки по цене")
+            println("Exit -- Выйти")
 
-            when (readlnOrNull()?.toIntOrNull()) {
+            when (readlnOrNull()) {
                 "Add" -> addShoes()
                 "Info" -> getShoesDetails()
                 "Del" -> deleteShoes()
                 "Fil" -> filterShoesByCost()
-                "Exit" -> return
-                "exit" -> return
+                "Exit", "exit" -> return
                 else -> println("Нет такой команды. Давай по новой.")
             }
         }

@@ -64,7 +64,7 @@ fun RegistrationContent(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Name
+
         RegistrationTextField(
             value = name,
             onValueChange = { name = it },
@@ -72,7 +72,7 @@ fun RegistrationContent(
             placeholder = "xxxxxxxxx"
         )
 
-        // Email
+
         RegistrationTextField(
             value = email,
             onValueChange = { email = it },
