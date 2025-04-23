@@ -13,10 +13,11 @@
         android:theme="@style/Theme.Mobilkakrosovok"
         tools:targetApi="31">
         <activity
-            android:name=".Skrins.MainActivity"
+            android:name="Skrins.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Mobilkakrosovok">
+            android:theme="@style/Theme.Mobilkakrosovok"
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
