@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     startDestination = Screen.FirstScreen.route
                 ) {
                     composable(Screen.FirstScreen.route) {
-                        FirstScreen(
+                        Screen.FirstScreen(
                             onGetStartedClick = {
                                 navController.navigate(Screen.SlideScreen.route) {
                                     popUpTo(Screen.FirstScreen.route) { inclusive = true }
