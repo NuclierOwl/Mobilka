@@ -25,11 +25,11 @@ class AuthUseCase(private val dataStore: DataStore, private val authRepository: 
             emit(NetworkResponse.Loading)
 
             if (!EmailValidator().validate(registrationRequest.email)) {
-                emit(NetworkResponse.Error("Invalid email format"))
+                emit(NetworkResponse.Error("Invalid email forma"))
                 return@flow
             }
             if (!PasswordValidator().validate(registrationRequest.password)) {
-                emit(NetworkResponse.Error("Password must contain: 8+ chars, 1 uppercase, 1 digit, 1 special char"))
+                emit(NetworkResponse.Error("Должно быть: 8+ букв, 1 заглавная, 1 собака, 1 спец символ"))
                 return@flow
             }
 
@@ -37,7 +37,7 @@ class AuthUseCase(private val dataStore: DataStore, private val authRepository: 
             dataStore.setToken(result.second)
             emit(NetworkResponse.Success(result))
         } catch (e: Exception) {
-            emit(NetworkResponse.Error(e.message ?: "Unknown Error"))
+            emit(NetworkResponse.Error(e.message ?: "Что-то не так"))
         }
     }
 
@@ -48,7 +48,7 @@ class AuthUseCase(private val dataStore: DataStore, private val authRepository: 
             dataStore.setToken(result.token)
             emit(NetworkResponse.Success(result))
         } catch (e: Exception) {
-            emit(NetworkResponse.Error(e.message ?: "Unknown Error"))
+            emit(NetworkResponse.Error(e.message ?: "Что-то не так"))
         }
     }
 
@@ -57,7 +57,7 @@ class AuthUseCase(private val dataStore: DataStore, private val authRepository: 
             val result = authRepository.getSneakers()
             result
         } catch (e: Exception) {
-            NetworkResponseSneakers.Error(e.message ?: "Unknown Error")
+            NetworkResponseSneakers.Error(e.message ?: "Что-то не так")
         }
     }
 }
